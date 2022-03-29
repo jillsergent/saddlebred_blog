@@ -46,3 +46,31 @@ function getTimeRemaining(endtime) {
   
   const deadline = 'August 19 2022 23:59:59 GMT-0500';
   initializeClock('clockdiv', deadline);
+
+
+  function LengthConverter(valNum) {
+    document.getElementById("outputHands").innerHTML=valNum/4;
+  }
+
+
+  var xValues = ["Undulata's Nutcracker", "Tango's Parting Kiss", "Sir William Robert", "Desert's Supreme Memories", "Designed"];
+var yValues = [130, 98, 87, 76, 74];
+var barColors = ["lightblue", "lightyellow","lavender","lightpink","lightgreen"];
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "Top Sires 2021"
+    }
+  }
+});
