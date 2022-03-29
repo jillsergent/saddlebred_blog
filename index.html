@@ -85,7 +85,14 @@
                 </div>
                 <div class="post">
                     <img src="img/hands.jpg" alt="">
-                    <p class="excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ea placeat temporibus aliquid nemo, quas enim provident atque veritatis, exercitationem sunt esse necessitatibus animi, dicta dignissimos molestias accusamus beatae numquam.  <a href="">...</a></p>
+                    <p class="excerpt"><h2>Length Converter</h2>
+                        <p>Type a value in the Inches field to convert the value to Hands:</p>
+                        
+                        <p>
+                          <label>Inches</label>
+                          <input id="inputInches" type="number" placeholder="Inches" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+                        </p>
+                        <p>Hands: <span id="outputHands"></span></p>
                 </div>
             </div>
 
@@ -93,11 +100,23 @@
                 <div class="meta">
                     <h1>The World's Championship Horse Show</h1>
                     <h3>Best and brightest at the Kentucky State Fair.</h3>
-                    <small>January 9, 2022
-                    </small>
+                    <small>January 9, 2022</small>
                 </div>
                 <div class="post">
                     <img src="img/statefair.jpg" alt="">
+                    <p class="excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ea placeat temporibus aliquid nemo, quas enim provident atque veritatis, exercitationem sunt esse necessitatibus animi, dicta dignissimos molestias accusamus beatae numquam.  <a href="">...</a></p>
+                </div>
+            </div>
+
+            <div class="blog-post">
+                <div class="meta">
+                    <h1>Winningest Sires at WCHS in 2021</h1>
+                    <h3>The top sires all around at the World's Championship.</h3>
+                    <small>December 15, 2021</small>
+                </div>
+                <div class="post">
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+                    <canvas id="myChart" style="width:100%;max-width:100%"></canvas>
                     <p class="excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ea placeat temporibus aliquid nemo, quas enim provident atque veritatis, exercitationem sunt esse necessitatibus animi, dicta dignissimos molestias accusamus beatae numquam.  <a href="">...</a></p>
                 </div>
             </div>
