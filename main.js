@@ -53,8 +53,8 @@ function getTimeRemaining(endtime) {
   }
 
 
-  var xValues = ["Undulata's Nutcracker", "Tango's Parting Kiss", "Sir William Robert", "Desert's Supreme Memories", "Designed"];
-var yValues = [130, 98, 87, 76, 74];
+var xValues = ["Undulata's Nutcracker", "Callaway's Northern Kiss ", "I'm First", "Sir William Robert", "Designed"];
+var yValues = [127, 101, 87, 85, 84];
 var barColors = ["lightblue", "lightyellow","lavender","lightpink","lightgreen"];
 
 new Chart("myChart", {
@@ -70,7 +70,7 @@ new Chart("myChart", {
     legend: {display: false},
     title: {
       display: true,
-      text: "Top Sires 2021"
+      text: "Top Sires 2020"
     }
   }
 });
