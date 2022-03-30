@@ -17,9 +17,9 @@
                     <h2>Saddlebred Source</h2>
                 </div>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <a href="#" class="mobile">&#9776;</a>
             </nav>
@@ -70,10 +70,28 @@
                     <h1>Contact Us</h1>
                     <h3>Drop us a line anytime.</h3>
                 </div>
-                <form name="submit-to-google-sheet">
-                    <input name="email" type="email" placeholder="Email" required>
-                    <button type="submit">Send</button>
-                  </form>
+                <div class="contact-box">
+                    <div class="right">
+                        <form name="submit-to-google-sheet">
+                        <input name="name" type="name" class="field" placeholder="Your Name">
+                        <input name="email" type="email" class="field" placeholder="Your Email">
+                        <input name="message" type="message" placeholder="Message" class="field"></textarea>
+                        <button class="btn">Send</button>
+                        </form>
+                    </div>
+                </div>
+                  
+                  <script>
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycbyB_Sj8_vWnGT-ffwM5n4M4UzUXDbWwiyFLddF3XJ0uM-cl5b5I88gY_zXSOWFmPANj/exec'
+                    const form = document.forms['submit-to-google-sheet']
+                  
+                    form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => console.log('Success!', response))
+                    .catch(error => console.error('Error!', error.message))
+                    })
+                  </script>
             </div>
         </main>
 
