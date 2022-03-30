@@ -74,3 +74,14 @@ new Chart("myChart", {
     }
   }
 });
+
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyLma38xlYNIFlCz2hshgEbEwcLaWeSwC_dupx2mGD8Rbl4XbaGXcLV7mVAdEVgjU4Mlw/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
