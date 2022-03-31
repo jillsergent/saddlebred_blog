@@ -49,7 +49,11 @@ function getTimeRemaining(endtime) {
 
 
   function LengthConverter(valNum) {
-    document.getElementById("outputHands").innerHTML=valNum/4;
+    valNum = parseInt(valNum);
+    let baseHand = Math.floor(valNum / 4)
+    let mod = valNum % 4;
+    console.log(baseHand, mod);
+    document.getElementById("outputHands").innerHTML=baseHand+ "." +mod;
   }
 
 
