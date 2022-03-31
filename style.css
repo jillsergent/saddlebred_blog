@@ -108,7 +108,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
 
 }
@@ -228,10 +228,6 @@ aside .comments,
 	font-size: 1.1rem;
 	margin-bottom: 22px;
 	transition: .3s;
-}
-
-textarea{
-	min-height: 150px;
 }
 
 .btn{
