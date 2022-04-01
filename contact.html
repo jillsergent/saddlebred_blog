@@ -26,7 +26,7 @@
         </header>
         <aside>
             <h1>Countdown</h1>
-            <h3>To the Kentucky State Fair</h3>
+            <h3>2022 World's Championship Horse Show</h3>
             <div id="clockdiv">
                 <div>
                     <span class="days"></span>
@@ -88,14 +88,16 @@
                     form.addEventListener('submit', e => {
                     e.preventDefault()
                     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                    .then(response => console.log('Success!', response))
-                    .catch(error => console.error('Error!', error.message))
+                    .then(response => alert('Thank you!'))
+                    .catch(error => alert('Error!'))
                     })
                   </script>
             </div>
         </main>
 
-    </div>
+
+
+</div>
 <script src="main.js"></script>
 </body>
 
